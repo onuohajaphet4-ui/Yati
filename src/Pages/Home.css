@@ -1,0 +1,10 @@
+.slide-image{
+  width: 100%;
+  height: 95vh;
+}
+
+@media(max-width:600px){
+    .slide-image{
+        height: 61vh;
+    }
+}
