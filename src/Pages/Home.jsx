@@ -7,6 +7,8 @@ import 'swiper/css/pagination'
 import './Home.css'
 import Nav from '../Component/Nav'
 import {Box} from '@mui/material'
+import {FiShoppingCart} from "react-icons/fi"
+import Footer from '../Component/Footer'
 const Home = () => {
      const slides = [
         {
@@ -21,7 +23,7 @@ const Home = () => {
      ]
   return (
 
-    <div>
+    <div className='hero'>
      <Box
       sx={{
         minHeight: "100vh",
@@ -33,12 +35,15 @@ const Home = () => {
         
       }}
     >
-    <div>
 
         
+   
+ 
+        
+    <Nav/>
       <Swiper 
         modules={[Navigation, Pagination , Autoplay]}
-        navigation
+       
         pagination={{clickable: true}}
         autoplay={{delay:4000}}
         loop
@@ -55,9 +60,27 @@ const Home = () => {
                  </SwiperSlide> 
            ))}       
       </Swiper>     
+   
+
+
+    <div className="hero-second">
+        <h1>YATI STORE</h1>
+
+        <button>
+            Shop Now
+        </button>
     </div>
 
-    <Nav/>
+    <div className="cart">
+         <FiShoppingCart size={28} color='red'/>
+    </div>
+
+
+
+
+
+    <Footer/>
+
     </Box>
     </div>
   )
