@@ -64,7 +64,7 @@ const Navv = () => {
                   
 
 
-                    <FiX size={28} color='red' style={{paddingLeft:'80%'}} onClick={() =>setOpen(false)}/>
+                    <FiX size={28} color='red' style={{paddingLeft:'100%'}} onClick={() =>setOpen(false)}/>
 
                     <div className="first">
                      <h1>Customer Dashboard</h1>

@@ -103,7 +103,7 @@ const Login = () => {
         sx={{
           position: "relative",
           zIndex: 1,
-          width: "420px",
+          width: "300px",
           p: 4,
           color: "#fff",
           background: "rgba(43, 41, 41, 0.52)",
@@ -220,7 +220,7 @@ const Login = () => {
          sx={{
             py: 1.5,
             mt: 1,
-            width:420,
+            width:300,
             borderRadius: "12px",
             textTransform: "none",
             fontWeight: "bold",

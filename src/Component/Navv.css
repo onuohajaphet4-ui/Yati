@@ -83,6 +83,7 @@
     transition: transform 0.3 ease,opacity 0.25s ease;
     opacity: 0;
     background-color:rgb(197, 84, 84);
+    top: 10px;
 
     .non-ul{
         display: block;
