@@ -15,11 +15,13 @@ const Nav = () => {
       {/* Dextop */}
       <div className="nav">
         <img src="https://d2gt4h1eeousrn.cloudfront.net/121245002/header-fcHJMd/DclbFT3-200x200.webp" alt="" />
+        
         <ul className='main-ul'>
-         <Link to='/' style={{textDecoration:'none' , color:'inherit'}}><li>Home</li></Link> 
-         <Link to='/gallary' style={{textDecoration:'none' , color:'inherit'}}><li>Gallery</li></Link> 
-         <Link to='/info' style={{textDecoration:'none' , color:'inherit'}}><li>Shop Info</li></Link> 
-         <Link to='/book' style={{textDecoration:'none' , color:'inherit'}}><li>Shop</li></Link> 
+         <Link to='/' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'>Home</li></Link> 
+         <Link to='/gallary' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'>Gallery</li></Link> 
+         <Link to='/info' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'>Shop Info</li></Link> 
+         <Link to='/book' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'>Shop</li></Link> 
+         <Link to='/log' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'> DashBoard </li></Link>
         </ul>
          
       </div>
@@ -37,7 +39,7 @@ const Nav = () => {
          
         </div>
 
-        </div>
+      </div>
 
       <div className={`overlay ${open ? "show" : ""}`} />
 
@@ -47,15 +49,15 @@ const Nav = () => {
 
             {/* <FiX size={28} color='red' style={{paddingLeftLeft:'30%'}}/> */}
 
-         <ul  >
+         <ul className='non-ul' >
             <FiX size={28} color='red' style={{paddingLeft:'180%'}} onClick={() =>setOpen(false)}/>
-           <Link to='/' style={{textDecoration:'none' , color:'inherit'}}><li>Home</li></Link>
-          <Link to='/gallary' style={{textDecoration:'none' , color:'inherit'}}><li>Gallery</li></Link>
-          <Link to='/info' style={{textDecoration:'none' , color:'inherit'}}><li>Shop Info</li></Link>
-          <Link to='/book' style={{textDecoration:'none' , color:'inherit'}}><li>Shop</li></Link>
+           <Link to='/' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'>Home</li></Link>
+          <Link to='/gallary' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'>Gallery</li></Link>
+          <Link to='/info' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'>Shop Info</li></Link>
+          <Link to='/book' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'>Shop</li></Link>
 
 
-           <Link to='/log'><button  className='admm'>Admin block</button></Link>
+           <Link to='/log'><button  className='admm'>DashBoard</button></Link>
          </ul> 
         </div>
      

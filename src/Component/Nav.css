@@ -7,7 +7,7 @@
      
     
 
-    li{
+    .main-li{
         color: rgb(197, 84, 84);
         font-size: 20px;
     }
@@ -88,13 +88,13 @@
     opacity: 0;
     background-color: white;
 
-    ul{
+    .non-ul{
         display: block;
         padding-top: 4%;
         list-style: none;
     }
 
-    li{
+    .non-li{
         padding-top: 17px;
         font-size: 20px;
     }
@@ -111,14 +111,32 @@
     
 }
 
-.men{
+ .admm{
+        padding: 10px;
+        /* font-size: 15px; */
+        width: 110px;
+        font-weight: bold;
+        border: none;
+        background-color: black;
+        color: white;
+        align-items: end;
+        border-radius: 5px;
+        /* margin-top: 20px; */
+        
+    }
+
+
+    
+
+
+@media(max-width:600px){
+
+    .men{
     position: absolute;
-    left: 155%;
+    left: 150%;
     width: 300%;
     
 }
-
-@media(max-width:600px){
 
     .admm{
         padding: 10px;
@@ -159,4 +177,12 @@
          
       
          
+}
+
+@media(max-width:450px){
+
+    .men{
+    left: 70%;
+    
+}
 }
