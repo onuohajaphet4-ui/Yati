@@ -17,12 +17,14 @@ import User  from './Pages/Dashbord/User'
 import Product  from './Pages/Dashbord/Product'
 import Forgot from './Pages/Forggotton'
 import Reset from './Pages/Reset'
+import Gal from './Dash/Gallery'
 function App() {
   
   return (
     <>
     <Routes>
       <Route path='/' element = {<Home/>}/>
+      <Route path='/Gal' element = {<Gal/>}/>
       <Route path='/reset-password/:token' element = {<Reset/>}/>
       <Route path='/forgot' element = {<Forgot/>}/>
       <Route path='/order' element = {<Order/>}/>

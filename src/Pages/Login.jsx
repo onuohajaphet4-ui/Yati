@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import {
   Box,
@@ -13,7 +12,7 @@ import {
 import { Visibility, VisibilityOff, EmailOutlined, LockOutlined } from "@mui/icons-material";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
-import  video from '../assets/vi.mp4'
+import  video from '../assets/video-perfume.mp4'
 import {Link} from 'react-router-dom'
 import {FcGoogle} from "react-icons/fc"
 
@@ -103,7 +102,7 @@ const Login = () => {
         sx={{
           position: "relative",
           zIndex: 1,
-          width: "300px",
+          width: "360px",
           p: 4,
           color: "#fff",
           background: "rgba(43, 41, 41, 0.52)",

@@ -13,7 +13,7 @@ import {
 import { Visibility, VisibilityOff, EmailOutlined, LockOutlined } from "@mui/icons-material";
 import { useNavigate  } from "react-router-dom";
 import axios from "axios";
-import  video from '../assets/vi.mp4'
+import  video from '../assets/video-perfume.mp4'
 
 
 

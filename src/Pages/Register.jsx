@@ -15,7 +15,7 @@ import LockOutlinedIcon from "@mui/icons-material/LockOutlined";
 import PhoneIphoneOutlinedIcon from "@mui/icons-material/PhoneIphoneOutlined";
 import HomeOutlinedIcon from "@mui/icons-material/HomeOutlined";
 // import  video from '../assets/video.mp4'
-import  video from '../assets/vi.mp4'
+import  video from '../assets/video-perfume.mp4'
 import {FcGoogle} from "react-icons/fc"
 
 

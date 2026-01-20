@@ -2,6 +2,7 @@ import React , { useEffect , useState } from 'react'
 import {Link} from 'react-router-dom'
 import './Navv.css'
 import {FiMenu ,FiX} from "react-icons/fi"
+import {FiShoppingCart,FiHome, FiHeart, FiUser} from "react-icons/fi"
 const Navv = () => {
   const [user , setUser] = useState(null)
     
@@ -36,11 +37,10 @@ const Navv = () => {
         <hr  style={{background:'red',border:'red 1px solid', marginBottom:'20px'}}/>
 
 
-         <Link to='/' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'>Home</li></Link> 
-         <Link to='/gallary' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'>Gallery</li></Link> 
-         <Link to='/info' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'>Shop Info</li></Link> 
-         <Link to='/book' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'>Shop</li></Link> 
-         <Link to='/log' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'> DashBoard </li></Link>
+         <Link to='/' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'><FiHome size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Dashboard</li></Link> 
+         <Link to='/gallary' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'><FiShoppingCart size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Order</li></Link> 
+         <Link to='/info' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'><FiHeart size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Favorite</li></Link> 
+         <Link to='/book' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'><FiUser size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Profile</li></Link> 
         </ul>
 
 
@@ -64,7 +64,7 @@ const Navv = () => {
                   
 
 
-                    <FiX size={28} color='red' style={{paddingLeft:'100%'}} onClick={() =>setOpen(false)}/>
+                    <FiX size={28} color='white' style={{marginLeft:'90%'}} onClick={() =>setOpen(false)}/>
 
                     <div className="first">
                      <h1>Customer Dashboard</h1>
@@ -82,11 +82,10 @@ const Navv = () => {
 
         <hr  style={{background:'red',border:'red 1px solid', marginBottom:'20px'}}/>
 
-                   <Link to='/' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'>Dashboard</li></Link>
-                  <Link to='/gallary' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'>Order</li></Link>
-                  <Link to='/info' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'>Wishlist</li></Link>
-                  <Link to='/book' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'>Support</li></Link>
-                  <Link to='/book' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'>Profile</li></Link>
+                   <Link to='/' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'><FiHome size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Dashboard</li></Link>
+                  <Link to='/gallary' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'><FiShoppingCart size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Order</li></Link>
+                  <Link to='/info' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'><FiHeart size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Favorite</li></Link>
+                  <Link to='/book' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'><FiUser size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Profile</li></Link>
         
         
                   
