@@ -68,10 +68,10 @@ const Contact = () => {
          <h2>Visit our studio at</h2>
          <p>Old kk road , site & service ,before ssg spot<br />owerri imo state </p>
          <h2>Message us</h2>
-         <p><a href="mailto:youremail@gmail.com?subject=Your%20Subject&body=Your%20Message"  style={{textDecoration:'none', color:'inherit'}}>chibuikeeric923@gmail.com </a> <br /><a href="tel:=08145990289"> 08140685213</a></p>
+         <p><a href="mailto:youremail@gmail.com?subject=Your%20Subject&body=Your%20Message"  style={{textDecoration:'none', color:'inherit'}}>onuohajaphet4@gmail.com </a> <br /><a href="tel:=08145990289"> 08140685213</a></p>
          
 
-         <h2>Working Hours</h2>
+         <h2>Business Hours</h2>
          <p> Monday - Saturday  : 09.00 - 23.00 <br /> Sunday           : 09.00 - 16.00s</p>
          
        </div>

@@ -9,6 +9,9 @@ import Nav from '../Component/Nav'
 import {Box} from '@mui/material'
 import {FiShoppingCart} from "react-icons/fi"
 import Footer from '../Component/Footer'
+import {Link} from 'react-router-dom'
+
+
 const Home = () => {
      const slides = [
         {
@@ -41,7 +44,7 @@ const Home = () => {
  
         
     <Nav/>
-      <Swiper 
+    <Swiper 
         modules={[Navigation, Pagination , Autoplay]}
        
         pagination={{clickable: true}}
@@ -67,12 +70,12 @@ const Home = () => {
         <h1>YATI STORE</h1>
 
         <button>
-            Shop Now
+         <Link to="/book" style={{color:'inherit', textDecoration:'none'}}>Shop Now</Link>   
         </button>
     </div>
 
     <div className="cart">
-         <FiShoppingCart size={28} color='red'/>
+     <Link to='/cart'>    <FiShoppingCart size={28} color='red'/> </Link>
     </div>
 
 

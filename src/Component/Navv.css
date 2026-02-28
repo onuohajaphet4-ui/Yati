@@ -1,8 +1,11 @@
 .ull{
+    
     background-color: rgb(197, 84, 84);
-    margin-right: 80%;
-    height: 100vh;
+    width: 250px;          /* fixed width sidebar */
+    min-height: 100vh;
     padding-top: 20px;
+    position: sticky;
+    top: 0;
 
     h1{
         font-size: 20px;

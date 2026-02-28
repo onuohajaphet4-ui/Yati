@@ -32,13 +32,14 @@ const Login = () => {
     setError("");
     try {
       const res = await axios.post(
-        "https://classwork-backend-yhli.onrender.com/api/admin/login",
+        "https://yati-perfume-backend.onrender.com/api/users/login",
         formData
       );
 
       const {token,user} = res.data
       localStorage.setItem("token",token);
         localStorage.setItem('user', JSON.stringify(user))
+        
 
         
      
@@ -115,7 +116,7 @@ const Login = () => {
        
 
         <Typography variant="h4" fontWeight="bold" sx={{ mb: 1 }}>
-          Log in <span style={{ color: "rgb(197, 84, 84)" }}>.</span>
+          Log in <span style={{ color: "red" }}>.</span>
         </Typography>
 
         <Typography variant="body2" sx={{ mb: 3 }}>
@@ -124,8 +125,10 @@ const Login = () => {
             style={{ color: "rgb(197, 84, 84)", cursor: "pointer" }}
             onClick={() => navigate("/register")}
           >
-            Register
+            Register 
           </span>
+
+          
         </Typography>
 
         {error && (

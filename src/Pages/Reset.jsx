@@ -34,11 +34,11 @@ const Login = () => {
     setError("");
     try {
       const res = await axios.post(
-        `https://classwork-backend-yhli.onrender.com/api/admin/reset-password/${token}`,
+        `https://yati-perfume-backend.onrender.com/api/users/reset-password/${token}`,
         formData
       );
 
-       alert("Registration successful! Please login.");
+       alert("Password has been succesfully resetted");
       navigate("/log");
 
       
@@ -95,7 +95,7 @@ const Login = () => {
         sx={{
           position: "relative",
           zIndex: 1,
-          width: "380px",
+          width: "360px",
           p: 4,
           color: "#fff",
           background: "rgba(43, 41, 41, 0.52)",

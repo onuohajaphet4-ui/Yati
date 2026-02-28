@@ -1,0 +1,285 @@
+.cart-intro{
+   display: flex;
+   gap: 30px;
+    border-bottom: 1px solid  #5c5858;
+    padding-left: 10%;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    margin-bottom: 5%;
+    background-color: white;
+
+    .cart-int{
+        h1{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            padding-bottom: 10px;
+        }
+
+        p{
+          font-weight: 100;
+            font-size: 17px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    }
+
+
+    .cart-in-icon{
+        margin-top: 15px;
+    }
+}
+
+.empty{
+     padding-left:200px;
+      padding-right:50px;
+      font-weight:bold;
+      padding-bottom: 50px;
+}
+
+.cartt{
+    background-color: white;
+    box-shadow: 0 4px 12px rgba(70, 69, 69, 0.363);
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-top: 1%;
+    gap: 10px;
+    border-radius: 10px;
+   
+
+    img{
+        width: 10%;
+        border-radius: 10px;
+        margin-left: 5%;
+    }
+
+    .iii{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2%;
+
+        p{
+            font-weight: bold;
+            margin-right: 14.5%;
+            
+        }
+    }
+   
+    h3{
+       margin-left: 20%;
+       
+    }
+
+    
+    .p{
+        margin-left: 50% ;
+        margin-right: 6%;
+        margin-top: 2%;
+         color: green;
+    }
+
+    .cartt-icon{
+        margin-top: 1.5%;
+    }
+    
+    .p-ca{
+        margin-left: 77%;
+       
+        
+    }
+    
+    h5{
+        margin-left: 5%;
+        color: green;
+        margin-top: 2%;
+    }
+    .ii{
+        display: flex;
+        
+        /* gap: 20px; */
+    }
+}
+
+.qun{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 2%;
+}
+
+.cart-card{
+    display: flex;
+    margin-bottom: 3%;
+    
+    
+
+    .cart-form{
+        background-color: white;
+    box-shadow: 0 4px 12px rgba(70, 69, 69, 0.363);
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 2%;
+    height: 74vh;
+     margin-top: 1%;
+
+    .fo{
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+
+        h4{
+            font-size: 20px;
+        }
+
+    }
+
+    button{
+            width: 90%;
+            margin-top: 10px;
+            padding: 10px;
+            margin-left: 4%;
+            outline: none;
+            font-size: 15px;
+            font-weight: bold;
+            background-color: red;
+            color: white;
+            border: none;
+            border-radius: 10px;
+       
+        }
+
+    }
+}
+
+.tt{
+    border: 1px solid rgb(178, 247, 178);
+    margin: 2% 5%;
+    padding: 10px;
+    background-color: rgb(204, 253, 204);
+    color: green;
+    border-radius: 10px;
+
+    span{
+        font-weight: bold;
+        color: rgb(4, 78, 4);
+    }
+
+    p{
+        font-size: 15px;
+    }
+}
+
+
+.end{
+    margin-top: 5%;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    color:gray;
+}
+
+@media(max-width:600px){
+    .empty{
+     padding-left:32%;
+    }
+
+    .cartt{
+    
+   
+   
+
+    
+    .iii{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 2%;
+
+        p{
+            font-weight: bold;
+            margin-right: 7%;
+            
+        }
+    }
+   
+    h3{
+       margin-left: 20%;
+       
+    }
+
+    
+    .p{
+        margin-left: 35% ;
+        margin-right: 0%;
+        margin-top: 2%;
+         color: green;
+
+     }
+
+    .cartt-icon{
+        margin-top: 1.5%;
+    }
+    
+    .p-ca{
+        margin-left: 72%;
+        margin-top: 3%;
+       
+        
+    }
+    
+    h5{
+        margin-left: 5%;
+        color: green;
+        margin-top: 2%;
+    }
+    .ii{
+        display:flex;
+        margin-top: 2%;
+        
+        /* gap: 20px; */
+    }
+}
+
+    .cart-intro{
+        padding-left: 2%;
+        gap: 10px;
+        flex-direction: column;
+
+        .cart-int{
+            h1{
+                font-size: 20px;
+            }
+
+            p{
+                font-size: 15px;
+            }
+        }
+
+        .cart-in-icon{
+            margin-top: 5px;
+        }
+    }
+
+    .cart-card{
+        flex-direction: column;
+
+        .cart-form{
+            width: 90%;
+            margin-left: 5%;
+            margin-top: 2%;
+            height: 74vh;
+        }
+    }
+
+    .cartt{
+        
+
+     h3{
+        font-size: 18px;
+     }
+
+    }
+}
+@media(max-width:430px){
+    .cart-card{
+        .cart-form{
+            height: 67vh;
+        }
+    }
+}

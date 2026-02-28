@@ -1,7 +1,7 @@
 import React , { useEffect , useState } from 'react'
 import {Link} from 'react-router-dom'
 import './Navv.css'
-import {FiMenu ,FiX} from "react-icons/fi"
+import {FiMenu ,FiShoppingBag,FiX} from "react-icons/fi"
 import {FiShoppingCart,FiHome, FiUsers, FiImage , FiBox} from "react-icons/fi"
 
 
@@ -40,10 +40,12 @@ const Navv = () => {
 
 
          <Link to='/admin' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'><FiHome size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Dashboard</li></Link> 
-         <Link to='/gal' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'><FiBox size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Product</li></Link> 
+         <Link to='/productt' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'><FiBox size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Product</li></Link> 
          <Link to='/gal' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'><FiImage size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Gallery</li></Link> 
-         <Link to='/book' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'><FiShoppingCart size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Orders</li></Link> 
-         <Link to='/log' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'><FiUsers size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Users</li></Link>
+         <Link to='/orderr' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'><FiShoppingCart size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Orders</li></Link> 
+         <Link to='/shopp' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'><FiShoppingBag size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Shop</li></Link> 
+         <Link to='/gallery' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'><FiImage size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Admin Gallery</li></Link> 
+         <Link to='/users' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'><FiUsers size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Users</li></Link>
         </ul>
 
 
@@ -87,10 +89,12 @@ const Navv = () => {
 
                   
                    <Link to='/admin' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'><FiHome size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Dashboard</li></Link>
-                  <Link to='/gal' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'><FiBox size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Product</li></Link>
+                  <Link to='/productt' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'><FiBox size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Product</li></Link>
                   <Link to='/gal' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'><FiImage size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Gallery</li></Link>
-                  <Link to='/book' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'><FiShoppingCart size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Orders</li></Link>
-                  <Link to='/book' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'><FiUsers size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Users</li></Link>
+                  <Link to='/orderr' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'><FiShoppingCart size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Orders</li></Link>
+                  <Link to='/shopp' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'><FiShoppingBag size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Shop</li></Link> 
+                  <Link to='/gallery' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'><FiImage size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Admin Gallery</li></Link> 
+                  <Link to='/users' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'><FiUsers size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Users</li></Link>
         
         
                   

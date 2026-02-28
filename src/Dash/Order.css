@@ -1,0 +1,163 @@
+.order-card{
+    margin: 3% 10%;
+    box-shadow:  0 4px 12px rgba(0, 0, 0, 0.493);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.order-first{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin: 2% 0%;
+
+    p{
+        color: green;
+        font-weight: bold;
+        margin-right: 60%;
+    }
+
+    h3{
+
+    }
+}
+
+.order{
+    width: 100%;
+}
+
+.order-second{
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 0%;
+    margin-bottom: 5%;
+    h4{
+        margin-top: 10px;
+    }
+}
+
+.order-end{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1%;
+
+    p{
+        padding-top: 20px;
+    }
+}
+
+.order-ending{
+    
+    font-weight: bold;
+    margin-top: 2%;
+
+    p{
+        text-align: end;
+    }
+}
+
+.order-ennd{
+    display: flex;
+    gap: 156px;
+    margin-top: 3%;
+    
+    
+}
+
+.usss{
+    display: flex;
+    gap: 350px;
+   
+}
+
+.order-intro{
+    margin: 3%;
+    font-family: Arial, Helvetica, sans-serif;
+
+    p{
+        margin-top: 1%;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 600;
+    }
+}
+
+.order-status{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+
+    button{
+        padding: 7px;
+        border-radius: 5px;
+        box-shadow:  0 4px 12px rgba(0, 0, 0, 0.493);
+        border: none;
+        font-weight: bold;
+    }
+}
+@media(max-width:600px){
+    .order-first{
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    margin: 2% 0%;
+
+    p{
+        color: green;
+        font-weight: bold;
+        margin-right:20%;
+    }
+    h4{
+        font-size: 12px;
+    }
+  }
+
+  .order-second{
+    flex-direction: column;
+
+    gap: 35px;
+
+    h4{
+        font-size: 15px;
+    }
+  }
+
+  .order-ennd{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+    
+    
+
+
+  }
+
+  .usss{
+    flex-direction: column;
+     gap: 15px;
+
+    .uss{
+      
+        margin-left: 20px;
+    }
+    
+  }
+
+  .ss{
+    font-size: 10px;
+  }
+.order-card{
+    margin: 3% 7%;
+    
+}
+
+.order-ending{
+    text-align: end;
+    p{
+        display: none;
+    }
+}
+
+.hr-end{
+    display: none;
+}
+}

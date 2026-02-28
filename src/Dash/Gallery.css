@@ -8,16 +8,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 10px;
 }
 
 .cardd {
   background:rgb(197, 84, 84);
   padding: 30px;
-  width: 380px;
   border-radius: 14px;
   box-shadow: 0 10px 40px rgba(0,0,0,0.6);
   color:black;
   text-align: center;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  width: 10%;
 }
 
 .card h2 {

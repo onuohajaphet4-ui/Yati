@@ -53,8 +53,11 @@
     .info{
         .info-flex1{
            flex-wrap: wrap; 
-           padding-right: 20%;
-           gap: 10px;
+           padding-right: 0%;
+           /* margin-left: 2%; */
+           margin-right: 4%;
+           gap: 30px;
+           justify-content: center;
         }
     }
 }

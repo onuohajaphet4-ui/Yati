@@ -99,6 +99,10 @@
         font-size: 20px;
     }
 
+    .non-li:hover{
+        color: red;
+    }
+
     
 
     
@@ -125,7 +129,7 @@
         
     }
 
-
+   
     
 
 
@@ -152,12 +156,26 @@
         
     }
       
-          .nav{
+    .nav{
+          
+       .main-ul{
             display: none;
-           
-          }
+       }
 
-          .menu{
+       img{
+         display:block;
+         justify-content:start;
+         align-items:start;
+         margin-right: 20%;
+         padding-left: 0%;
+         width: 50%;
+   
+       }
+             
+           
+    }
+
+    .menu{
 
             display:block;
             margin-left: 10px;

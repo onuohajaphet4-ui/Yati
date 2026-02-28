@@ -41,10 +41,10 @@ const RegistrationScreen = () => {
 
     try {
       await axios.post(
-        "https://classwork-backend-yhli.onrender.com/api/admin",
+        "https://yati-perfume-backend.onrender.com/api/users",
         formData
       );
-      alert("Registration successful! Please login.");
+      alert("Registration successful!.");
       navigate("/log");
     } catch (err) {
       setError(err?.response?.data?.error || "Registration failed");
@@ -110,7 +110,7 @@ const RegistrationScreen = () => {
         sx={{
           position: "center",
           zIndex: 1,
-          width: "600px",
+          width: "360px",
           color: "#fff",
           display: "flex",
           flexDirection: "column",
@@ -132,14 +132,14 @@ const RegistrationScreen = () => {
        
         </Typography>
 
-        <Typography variant="h4" fontWeight="bold" sx={{ mb: 1 }}>
-          Create new account<span style={{ color: "red" }}>.</span>
+        <Typography variant="h5" fontWeight="bold" sx={{ mb: 1 }}>
+          Create new account<span style={{ color: "red" }}> .</span>
         </Typography>
 
         <Typography variant="body2" sx={{ mb: 2 }}>
           Already has an account?{" "}
           <span
-            style={{ color: "red", cursor: "pointer" }}
+            style={{ color: "rgb(197, 84, 84)", cursor: "pointer" }}
             onClick={() => navigate("/log")}
           >
             Log in
@@ -164,7 +164,7 @@ const RegistrationScreen = () => {
             InputProps={{
               startAdornment: (
                 <InputAdornment position="start">
-                  <PersonOutlineIcon sx={{ color: "red" }} />
+                  <PersonOutlineIcon sx={{ color: "rgb(197, 84, 84)" }} />
                 </InputAdornment>
               ),
             }}
@@ -186,7 +186,7 @@ const RegistrationScreen = () => {
             InputProps={{
               startAdornment: (
                 <InputAdornment position="start">
-                  <EmailOutlinedIcon sx={{ color: "red" }} />
+                  <EmailOutlinedIcon sx={{ color: "rgb(197, 84, 84)" }} />
                 </InputAdornment>
               ),
             }}
@@ -202,7 +202,7 @@ const RegistrationScreen = () => {
             InputProps={{
               startAdornment: (
                 <InputAdornment position="start">
-                  <PhoneIphoneOutlinedIcon sx={{ color: "red" }} />
+                  <PhoneIphoneOutlinedIcon sx={{ color: "rgb(197, 84, 84)" }} />
                 </InputAdornment>
               ),
             }}
@@ -223,7 +223,7 @@ const RegistrationScreen = () => {
             InputProps={{
               startAdornment: (
                 <InputAdornment position="start">
-                  <LockOutlinedIcon sx={{ color: "red" }} />
+                  <LockOutlinedIcon sx={{ color: "rgb(197, 84, 84)" }} />
                 </InputAdornment>
               ),
             }}
@@ -245,7 +245,7 @@ const RegistrationScreen = () => {
             fontWeight: "bold",
             fontSize: "1rem",
             backgroundColor: "black",
-            "&:hover": { backgroundColor: "red" },
+            "&:hover": { backgroundColor: "rgb(197, 84, 84)" },
           }}
         >
           {loading ? (
@@ -270,7 +270,7 @@ const RegistrationScreen = () => {
             fontWeight: "bold",
             fontSize: "1rem",
             backgroundColor: "black",
-            "&:hover": { backgroundColor: "red" },
+            "&:hover": { backgroundColor: "rgb(197, 84, 84)" },
           }}>
                   <FcGoogle style={{paddingRight:'20px'}}/>  with Google 
                 </Button>

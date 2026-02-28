@@ -1,69 +1,77 @@
-import React , {useState} from 'react'
+import React, { useState } from 'react'
 import './Nav.css'
-import {FiMenu ,FiX} from "react-icons/fi"
-import {Link} from 'react-router-dom'
+import { FiMenu, FiX } from "react-icons/fi"
+import { Link } from 'react-router-dom'
 
 const Nav = () => {
-  
-   const[open , setOpen] = useState(false)
+
+  const [open, setOpen] = useState(false)
+
+  const token = localStorage.getItem("token")
+  const dashboardPath = token ? "/customer" : "/log"
+
   return (
     <div className='main'>
       <nav>
 
-        
-      
-      {/* Dextop */}
-      <div className="nav">
-        <img src="https://d2gt4h1eeousrn.cloudfront.net/121245002/header-fcHJMd/DclbFT3-200x200.webp" alt="" />
-        
-        <ul className='main-ul'>
-         <Link to='/' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'>Home</li></Link> 
-         <Link to='/gallary' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'>Gallery</li></Link> 
-         <Link to='/info' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'>Shop Info</li></Link> 
-         <Link to='/book' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'>Shop</li></Link> 
-         <Link to='/log' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'> DashBoard </li></Link>
-        </ul>
-         
-      </div>
+        {/* Desktop */}
+        <div className="nav">
+          <img src="https://d2gt4h1eeousrn.cloudfront.net/121245002/header-fcHJMd/DclbFT3-200x200.webp" alt="" />
 
+          <ul className='main-ul'>
+            <Link to='/' style={{ textDecoration: 'none', color: 'inherit' }}>
+              <li className='main-li'>Home</li>
+            </Link>
 
-      <div className="navv">
+            <Link to='/gallary' style={{ textDecoration: 'none', color: 'inherit' }}>
+              <li className='main-li'>Gallery</li>
+            </Link>
 
-      {/* mobile ham */}
-        <div  className="menu" onClick={() => setOpen(!open)}>
-        <FiMenu size={28} color='red'/>
+            <Link to='/info' style={{ textDecoration: 'none', color: 'inherit' }}>
+              <li className='main-li'>Shop Info</li>
+            </Link>
 
-        <img src="https://d2gt4h1eeousrn.cloudfront.net/121245002/header-fcHJMd/DclbFT3-200x200.webp" className='men' alt="" />
-    
-         
-         
+            <Link to='/book' style={{ textDecoration: 'none', color: 'inherit' }}>
+              <li className='main-li'>Shop</li>
+            </Link>
+
+            {/*  Dashboard dynamic link */}
+            <Link to={dashboardPath} style={{ textDecoration: 'none', color: 'inherit' }}>
+              <li className='main-li'>Dashboard</li>
+            </Link>
+          </ul>
         </div>
 
-      </div>
+        {/* Mobile */}
+        <div className="navv">
+          <div className="menu" onClick={() => setOpen(!open)}>
+            <FiMenu size={28} color='red' />
+          </div>
+        </div>
 
-      <div className={`overlay ${open ? "show" : ""}`} />
+        <div className={`overlay ${open ? "show" : ""}`} />
 
-      {/* Mobile */}
-     
         <div className={`mobile-nav ${open ? "show" : ""}`}>
+          <ul className='non-ul'>
+            <FiX size={28} color='red'
+              style={{ marginLeft: '140%' }}
+              onClick={() => setOpen(false)}
+            />
 
-            {/* <FiX size={28} color='red' style={{paddingLeftLeft:'30%'}}/> */}
+            <Link to='/' style={{color:'inherit', textDecoration:'none'}}><li className='non-li'>Home</li></Link>
+            <Link to='/gallary' style={{color:'inherit', textDecoration:'none'}}><li className='non-li'>Gallery</li></Link>
+            <Link to='/info' style={{color:'inherit', textDecoration:'none'}}><li className='non-li'>Shop Info</li></Link>
+            <Link to='/book' style={{color:'inherit', textDecoration:'none'}}><li className='non-li'>Shop</li></Link>
 
-         <ul className='non-ul' >
-            <FiX size={28} color='red' style={{paddingLeft:'180%'}} onClick={() =>setOpen(false)}/>
-           <Link to='/' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'>Home</li></Link>
-          <Link to='/gallary' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'>Gallery</li></Link>
-          <Link to='/info' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'>Shop Info</li></Link>
-          <Link to='/book' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'>Shop</li></Link>
+            {/* ✅ Mobile Dashboard dynamic */}
+            <Link to={dashboardPath}>
+              <button className='admm'>Dashboard</button>
+            </Link>
 
-
-           <Link to='/log'><button  className='admm'>DashBoard</button></Link>
-         </ul> 
+          </ul>
         </div>
-     
-         
+
       </nav>
-      
     </div>
   )
 }
