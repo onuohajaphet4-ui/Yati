@@ -25,7 +25,7 @@ const Info = () => {
                 <h5 style={{color:'rgb(101, 101, 241)'}}>Terms & Conditions</h5>
                 <h5 style={{color:'rgb(101, 101, 241)'}}>Shipping & Payment Info</h5>
                 <h5  style={{color:'rgb(101, 101, 241)'}}>Return Policy</h5>
-             <Link to='/gallery'>   <h5  style={{color:'rgb(101, 101, 241)'}}>Lookbook</h5> </Link>
+             <Link to='/gal'>   <h5  style={{color:'rgb(101, 101, 241)'}}>Lookbook</h5> </Link>
             </div>
 
             <h4>

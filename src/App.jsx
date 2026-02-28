@@ -39,7 +39,7 @@ function App() {
     <>
     <Routes>
       <Route path='/' element = {<Home/>}/>
-      <Route path='/gallery' element = {<AdminGal/>}/>
+      <Route path='/gallry' element = {<AdminGal/>}/>
       <Route path='/pay' element = {<Pay/>}/>
       <Route path='/orderr' element = {<Orderr/>}/>
       <Route path='/payment-success' element = {<Payment/>}/>
@@ -50,7 +50,7 @@ function App() {
       <Route path='/profile/edit/:id' element ={<Updatepro/>}/>
       <Route path='/shopp' element = {<Shopp/>}/>
       <Route path='/users' element = {<Users/>}/>
-      <Route path='/Gal' element = {<Gal/>}/>
+      <Route path='/gal' element = {<Gal/>}/>
       <Route path='/book/:id' element = {<ProductD/>} />
       <Route path='/productt' element = {<Productt/>}/>
       <Route path='/reset-password/:token' element = {<Reset/>}/>

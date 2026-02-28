@@ -44,7 +44,7 @@ const Navv = () => {
          <Link to='/gal' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'><FiImage size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Gallery</li></Link> 
          <Link to='/orderr' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'><FiShoppingCart size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Orders</li></Link> 
          <Link to='/shopp' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'><FiShoppingBag size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Shop</li></Link> 
-         <Link to='/gallery' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'><FiImage size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Admin Gallery</li></Link> 
+         <Link to='/gallry' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'><FiImage size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Admin Gallery</li></Link> 
          <Link to='/users' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'><FiUsers size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Users</li></Link>
         </ul>
 
@@ -93,7 +93,7 @@ const Navv = () => {
                   <Link to='/gal' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'><FiImage size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Gallery</li></Link>
                   <Link to='/orderr' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'><FiShoppingCart size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Orders</li></Link>
                   <Link to='/shopp' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'><FiShoppingBag size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Shop</li></Link> 
-                  <Link to='/gallery' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'><FiImage size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Admin Gallery</li></Link> 
+                  <Link to='/gallry' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'><FiImage size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Admin Gallery</li></Link> 
                   <Link to='/users' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'><FiUsers size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Users</li></Link>
         
         
