@@ -143,7 +143,7 @@ const Cart = () => {
 
           </div>
           <div className="ii">
-            <img src={item.productId.imageUrl}  alt="" className='' />
+            <img src={item.productId?.imageUrl}  alt="" className='' />
             <h5>Tax:  5%  </h5>
             <p className="p"> + ₦{(item.productId?.price * item.quantity * 0.05).toFixed(2)} </p>
             <FiTrash2 onClick={() => deleteCart(item._id)} size={20} color='red' className="cartt-icon" />
