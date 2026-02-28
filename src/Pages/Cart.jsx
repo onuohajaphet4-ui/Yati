@@ -38,7 +38,7 @@ const Cart = () => {
  
       const deleteCart = async (_id) =>{
   
-             const confirm = window.confirm('Are you sure want to delete this user?')
+             const confirm = window.confirm('Are you sure want to remove this Product?')
      if (!confirm) return;
       const token = localStorage.getItem("token")
      try {

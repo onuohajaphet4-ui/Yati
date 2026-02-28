@@ -11,6 +11,8 @@ export default function PaymentSuccess() {
     const verify = async () => {
       try {
         const token = localStorage.getItem("token");
+            
+        console.log('TOKEN:', token)
 
         // 1️⃣ verify payment
         const verifyRes = await axios.get(
@@ -19,9 +21,11 @@ export default function PaymentSuccess() {
             headers: {
               Authorization: `Bearer ${token}`,
             },
-          }
+          },
+
         );
 
+        
         if (!verifyRes.data.success) {
           alert("Payment not verified");
           return;
