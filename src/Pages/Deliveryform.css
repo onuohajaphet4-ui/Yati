@@ -49,3 +49,9 @@
         box-shadow:  0 4px 12px rgba(0, 0, 0, 0.493);
     }
 }
+
+@media(max-width:430px){
+    .formmm{
+        margin: 2% 5%;
+    }
+}
