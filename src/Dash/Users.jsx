@@ -57,8 +57,9 @@ const UsersList = () => {
     const confirm = window.confirm("Are you sure you want to delete this user?");
     if (!confirm) return;
     try {
-      await axios.delete(`https://yati-perfume-backend.onrender.com/api/users/api/auth/delete/${_id}`);
+      await axios.delete(`https://yati-perfume-backend.onrender.com/api/users/delete/${_id}`);
       setUsers(users.filter((u) => u._id !== _id));
+      alert("User deleted successfully");
     } catch (error) {
       console.error(error);
       alert("Failed to delete user");
@@ -180,7 +181,7 @@ const UsersList = () => {
                   </Avatar>
                   <Box>
                     <Typography fontWeight="bold">
-                      {user.name} / {user.role}
+                      {user.name}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                       {user.email}

@@ -63,7 +63,7 @@ const handleLogout = () => {
       <div className="black">
        
             <span >
-              Welcome,  {user.names}
+              Welcome,  {user?.names}
             </span>
          
       </div>
@@ -114,12 +114,12 @@ const handleLogout = () => {
             <h4>Total Spent</h4></div>
 
           <div className="admincontent-card">
-            <FiUsers size={25} color='purple' className='admin-icon'/>
+            <FiShoppingCart size={25} color='red' className='admin-icon'/>
 
             <h2>{stats.totalProducts|| 0}</h2>
             <h4>Product Bought</h4></div>
           <div className="admincontent-card">
-            <FiShoppingBag size={25} color='red' className='admin-icon'/>
+            <FiShoppingBag size={25} color='purple' className='admin-icon'/>
 
             <h2>{stats.pendingOrders || 0}</h2>
             <h4>Pending Orders</h4></div>

@@ -12,7 +12,9 @@ const OAuthSuccess = () => {
       navigate("/login")
       return
     }
-
+      
+    //clesar prevous token
+    localStorage.clear()
     // Save token
     localStorage.setItem("token", token)
 

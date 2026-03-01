@@ -112,8 +112,8 @@ useEffect(() => {
         
     <div className="gal">
       {favorites.map((fav) => (
-     <div className="gal-card">
-      <img key={fav._id}  src={fav.imageUrl}alt=""width="200"/>
+     <div className="gal-card" key={fav._id}>
+      <img   src={fav.image.imageUrl}alt=""width="200"/>
 
       <button onClick={() =>  deleteFav(fav._id)} className="boooo">
          <FiTrash2  size={20} color='red' className="cartt-icon" />

@@ -28,6 +28,7 @@ const Customer = () => {
         );
         // IMPORTANT: your backend sends { users }
         setUser(res.data.users);
+        console.log(res.data.users);
 
       } catch (err) {
         console.error(err);

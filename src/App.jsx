@@ -33,12 +33,14 @@ import Pay from './Component/Taxrate'
 import Payment from './Pages/Payment-success'
 import Orderr from './Dash/Order'
 import AdminGal from './Dash/AdminGallery'
+import Con from "./Component/Contact"
 function App() {
   
   return (
     <>
     <Routes>
       <Route path='/' element = {<Home/>}/>
+      <Route path='/con' element = {< Con/>}/>
       <Route path='/gallry' element = {<AdminGal/>}/>
       <Route path='/pay' element = {<Pay/>}/>
       <Route path='/orderr' element = {<Orderr/>}/>

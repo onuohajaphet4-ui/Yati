@@ -10,9 +10,9 @@ const Footer = () => {
       <div className="foot-flex">
         <Link to='/info' style={{textDecoration:'none' , color:'inherit'}}> <p>Shop info</p> </Link> 
         <Link to='/gallary' style={{textDecoration:'none' , color:'inherit'}}> <p>gallery</p></Link> 
-        <Link to='/book' style={{textDecoration:'none' , color:'inherit'}}><p>Terms & Conditions</p></Link> 
+        <Link to='/info' style={{textDecoration:'none' , color:'inherit'}}><p>Terms & Conditions</p></Link> 
         <Link to='/con' style={{textDecoration:'none' , color:'inherit'}}><p>Send a message</p></Link> 
-        <Link to='/form' style={{textDecoration:'none' , color:'inherit'}}><p>Shipping & Payment Info</p></Link> 
+        <Link to='/info' style={{textDecoration:'none' , color:'inherit'}}><p>Shipping & Payment Info</p></Link> 
       </div>
     </div>
   )

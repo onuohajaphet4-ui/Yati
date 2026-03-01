@@ -68,7 +68,7 @@ const Form = ({ imageUrl }) => {
                   <div className="input-wrapper">
                      <FiBox size={17} color='red' style={{marginTop:'15px', marginRight:'10px'}} className='input-icon'/>
                  <input type="text" name='name'   placeholder='Product Name' required    value={formData.name}
-            onChange={handleChange}/> 
+                  onChange={handleChange}/> 
                   </div>
                 
                    

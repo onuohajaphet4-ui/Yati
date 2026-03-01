@@ -103,7 +103,7 @@ const Login = () => {
         sx={{
           position: "relative",
           zIndex: 1,
-          width: "360px",
+          width: "355px",
           p: 4,
           color: "#fff",
           background: "rgba(43, 41, 41, 0.52)",
@@ -217,7 +217,7 @@ const Login = () => {
         <p style={{textAlign:'center', paddingTop:'10px'}}>OR</p>
 
         <Button onClick={() =>{
-          window.location.href="https://classwork-backend-yhli.onrender.com/auth/google"
+          window.location.href="https://yati-perfume-backend.onrender.com/auth/google"
         }}
          sx={{
             py: 1.5,

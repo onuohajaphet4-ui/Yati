@@ -22,11 +22,11 @@ const Navv = () => {
         <h1>Customer Dashboard</h1>
          {user ? (
             <span >
-              Hi,   <b>{user.names}  </b> 
+              Hi,   <b>{user?.names}  </b> 
             </span>
           ) : (
-            <span style={{ color: "black", marginLeft: "20px" ,fontSize:'10px'}}>
-              Welcome, Guest
+            <span >
+              Welcome, Mr/Mrs
             </span>
           )}
         </div>
@@ -38,7 +38,7 @@ const Navv = () => {
          <Link to='/' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'><FiHome size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Home</li></Link> 
          <Link to='/order' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'><FiShoppingCart size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Order</li></Link> 
          <Link to='/favorite' style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'><FiHeart size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Favorite</li></Link> 
-         <Link to={`/profile/${user.id}`} style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'><FiUser size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Profile</li></Link> 
+         <Link to={`/profile/${user?.id}`} style={{textDecoration:'none' , color:'inherit'}}><li className='main-li'><FiUser size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Profile</li></Link> 
          
          </ul>
 
@@ -73,7 +73,7 @@ const Navv = () => {
                      </span>
                        ) : (
                      <span style={{ color: "black", marginLeft: "20px" ,fontSize:'10px'}}>
-                      Welcome, Guest
+                      Welcome, Mr/Mrs
                     </span>
                     )}
                    </div>
@@ -84,7 +84,7 @@ const Navv = () => {
                    <Link to='/' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'><FiHome size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Home</li></Link>
                   <Link to='/order' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'><FiShoppingCart size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Order</li></Link>
                   <Link to='/favorite' style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'><FiHeart size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Favorite</li></Link>
-                  <Link to={`/profile/${user.id}`} style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'><FiUser size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Profile</li></Link>
+                  <Link to={`/profile/${user?.id}`} style={{textDecoration:'none' , color:'inherit'}}><li className='non-li'><FiUser size={20} color='white' style={{marginTop:'15px', marginRight:'10px'}}/>Profile</li></Link>
         
         
                   

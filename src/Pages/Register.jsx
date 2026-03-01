@@ -46,6 +46,7 @@ const RegistrationScreen = () => {
       );
       alert("Registration successful!.");
       navigate("/log");
+      console.log(res.data);
     } catch (err) {
       setError(err?.response?.data?.error || "Registration failed");
     } finally {
@@ -157,7 +158,7 @@ const RegistrationScreen = () => {
           <TextField
             label=" name"
             name="name"
-            value={formData.firstName}
+            value={formData.name}
             onChange={handleChange}
             required
             fullWidth
@@ -195,7 +196,7 @@ const RegistrationScreen = () => {
           <TextField
             label="Phone number"
             name="phoneNumber"
-            type="tel"
+            type="phoneNumber"
             value={formData.phoneNumber}
             onChange={handleChange}
             fullWidth
